@@ -3,13 +3,10 @@ package ru.netology.patient.entity;
 import java.util.Objects;
 
 public class BloodPressure {
-
     private int high;
-
     private int low;
 
-    public BloodPressure() {
-    }
+    public BloodPressure() {}
 
     public BloodPressure(int high, int low) {
         this.high = high;
@@ -27,9 +24,9 @@ public class BloodPressure {
     @Override
     public String toString() {
         return "BloodPressure{" +
-            "high=" + high +
-            ", low=" + low +
-            '}';
+                "high=" + high +
+                ", low=" + low +
+                '}';
     }
 
     @Override
@@ -37,8 +34,7 @@ public class BloodPressure {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         BloodPressure that = (BloodPressure) o;
-        return high == that.high &&
-            low == that.low;
+        return high == that.high && low == that.low;
     }
 
     @Override
